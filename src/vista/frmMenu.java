@@ -30,29 +30,29 @@ public class frmMenu extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         txtNombre = new javax.swing.JTextField();
         txtPrecio = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
+        txtBuscar = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         btnBuscar = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        btnGuardar = new javax.swing.JButton();
+        btnActualizar = new javax.swing.JButton();
+        btnEliminar = new javax.swing.JButton();
+        btnLimpiar = new javax.swing.JButton();
         txtIngrediente = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        jtbMenu = new javax.swing.JTable();
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(153, 153, 255));
+        jPanel1.setBackground(new java.awt.Color(153, 255, 153));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel1.setText("Taqueria los tilines");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, -1, -1));
+        jLabel1.setText("Taqueria nosedondeXD");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, -1, -1));
 
         txtNombre.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 340, 50));
@@ -60,8 +60,8 @@ public class frmMenu extends javax.swing.JFrame {
         txtPrecio.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.add(txtPrecio, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 340, 50));
 
-        jTextField3.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 260, 310, 30));
+        txtBuscar.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.add(txtBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 260, 310, 30));
 
         jLabel2.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 0));
@@ -89,44 +89,44 @@ public class frmMenu extends javax.swing.JFrame {
         });
         jPanel1.add(btnBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 260, 80, 30));
 
-        jButton2.setBackground(new java.awt.Color(51, 255, 255));
-        jButton2.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(0, 0, 0));
-        jButton2.setText("Guardar");
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 550, 190, 40));
+        btnGuardar.setBackground(new java.awt.Color(51, 255, 255));
+        btnGuardar.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        btnGuardar.setForeground(new java.awt.Color(0, 0, 0));
+        btnGuardar.setText("Guardar");
+        jPanel1.add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 550, 190, 40));
 
-        jButton3.setBackground(new java.awt.Color(51, 255, 255));
-        jButton3.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(0, 0, 0));
-        jButton3.setText("Actualizar");
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 550, 190, 40));
+        btnActualizar.setBackground(new java.awt.Color(51, 255, 255));
+        btnActualizar.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        btnActualizar.setForeground(new java.awt.Color(0, 0, 0));
+        btnActualizar.setText("Actualizar");
+        jPanel1.add(btnActualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 550, 190, 40));
 
-        jButton4.setBackground(new java.awt.Color(51, 255, 255));
-        jButton4.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(0, 0, 0));
-        jButton4.setText("Eliminar");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btnEliminar.setBackground(new java.awt.Color(51, 255, 255));
+        btnEliminar.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        btnEliminar.setForeground(new java.awt.Color(0, 0, 0));
+        btnEliminar.setText("Eliminar");
+        btnEliminar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btnEliminarActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 550, 190, 40));
+        jPanel1.add(btnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 550, 190, 40));
 
-        jButton5.setBackground(new java.awt.Color(51, 255, 255));
-        jButton5.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(0, 0, 0));
-        jButton5.setText("Limpiar");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        btnLimpiar.setBackground(new java.awt.Color(51, 255, 255));
+        btnLimpiar.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        btnLimpiar.setForeground(new java.awt.Color(0, 0, 0));
+        btnLimpiar.setText("Limpiar");
+        btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                btnLimpiarActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 550, 180, 40));
+        jPanel1.add(btnLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 550, 180, 40));
 
         txtIngrediente.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.add(txtIngrediente, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 340, 50));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        jtbMenu.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -137,7 +137,7 @@ public class frmMenu extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(jtbMenu);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, 780, 220));
 
@@ -162,13 +162,13 @@ public class frmMenu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnBuscarActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_btnEliminarActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_btnLimpiarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -206,11 +206,11 @@ public class frmMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton btnActualizar;
     public javax.swing.JButton btnBuscar;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    public javax.swing.JButton btnEliminar;
+    public javax.swing.JButton btnGuardar;
+    public javax.swing.JButton btnLimpiar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -218,8 +218,8 @@ public class frmMenu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField3;
+    public javax.swing.JTable jtbMenu;
+    public javax.swing.JTextField txtBuscar;
     public javax.swing.JTextField txtIngrediente;
     public javax.swing.JTextField txtNombre;
     public javax.swing.JTextField txtPrecio;
