@@ -67,6 +67,24 @@ public class Menu {
             System.out.println("este es el error en el modelo:metodo guardar " + ex);
         }
       }
+      //para eliminar
+      public void Eliminar(JTable tabla) {
+        //Creamos una variable igual a ejecutar el método de la clase de conexión
+        Connection conexion = ClaseConexion.getConexion();
+ 
+        //obtenemos que fila seleccionó el usuario
+        int filaSeleccionada = tabla.getSelectedRow();
+        //Obtenemos el id de la fila seleccionada
+        String miId = tabla.getValueAt(filaSeleccionada, 0).toString();
+        //borramos 
+        try {
+            PreparedStatement deleteEstudiante = conexion.prepareStatement("delete from tbMenu where UUID_menu = ?");
+            deleteEstudiante.setString(1, miId);
+            deleteEstudiante.executeUpdate();
+        } catch (Exception e) {
+            System.out.println("este es el error metodo de eliminar" + e);
+        }
+    }
       //para mostrar en el datagridview
       public void Mostrar(JTable tabla) {
         //Creamos una variable de la clase de conexion
@@ -92,6 +110,11 @@ public class Menu {
         } catch (Exception e) {
             System.out.println("Este es el error en el modelo, metodo mostrar " + e);
         }
+
+        
+         
+
     }
+ 
 }
       

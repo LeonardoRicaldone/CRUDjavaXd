@@ -20,5 +20,5 @@ public class Tutorialcomohaceruncrudtodocsmd {
     //lo anterior seria un crud de nada crack
     
     //para mostrar en el datagridview ve a modelo menu debajo de guardar
-    //despues lo mandamos a llamar desde el controlador
+    //despues lo mandamos a llamar desde el controlador lo mismo para eliminar le programamos el boton oncliclistener tambien
 }
